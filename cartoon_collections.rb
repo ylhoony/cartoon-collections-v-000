@@ -34,7 +34,7 @@ def find_the_cheese(strings)# code an argument here
   # end
   # string_return[0]
 
-  strings.find do |maybe_cheese|
+  strings.find do |string|
     cheeses.include?(maybe_cheese)
   end
 end
