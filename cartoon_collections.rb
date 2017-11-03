@@ -25,7 +25,7 @@ end
 def find_the_cheese(strings)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+
   # string_return = []
   # strings.each_with_index do |string, i |
   #   if cheese_types.include?(string)
@@ -34,5 +34,7 @@ def find_the_cheese(strings)# code an argument here
   # end
   # string_return[0]
 
-  
+  strings.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
 end
